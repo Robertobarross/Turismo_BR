@@ -16,12 +16,13 @@ include "connect.php"; // Arquivo para conexão com o banco de dados //
 <!-- Inicio da div bucar -->
 <div id="buscar" align="center">
     <style type="text/css">/* Configuração dos intens da div */
+    #buscar{width: 80%; height: 2000px; border: 3px solid #ffff00; margin-left: auto; margin-right: auto;}
     body {background-image: url("Imagens/img2.jpg");} /* Imagem cor de fundo */
     </style>
 
 <?php // Arquivo de busca no banco de dados e variavéis da conexão //
-    @$busc = $_POST['busc'];
-    $sql = mysqli_query($link, "SELECT * FROM cadviagem WHERE cidade LIKE '%".$busc."%'");
+    @$buscar=$_POST['buscar'];
+    $sql = mysqli_query($link, "SELECT * FROM cadviagem WHERE cidade LIKE '%".$buscar."%'");
     $row = mysqli_num_rows($sql);
     if($row > 0) {
     while($linha = mysqli_fetch_array($sql)) { // Iniciando as variáveis //
@@ -35,41 +36,22 @@ include "connect.php"; // Arquivo para conexão com o banco de dados //
     }
 ?>
 
-    <!-- Iniciando arquivo da postagem superior -->
-    <a class="texto <?php echo "cidade>" .$cidade;?>;">
-<?php
-    echo "</br></br>";
-    echo "<strong>Cidade: </strong>".$cidade;
-    echo "<br/><br/>";  
-    echo "<strong>Atrativos: </strong>" .$descricao1;
-    echo "<br/></br>";
-?>
-    <br><img src="Postagens/<?php echo ""."/".$foto1;?>"class="imagem">
-    <!-- Finalizando arquivo da postagem superior -->
- 
-
-    <!-- Iniciando arquivo da postagem inferior -->
-    <a class="texto <?php echo "lugar2>" .$lugar2;?>"
-<?php
-    echo "</br></br>";
-    echo "<strong>Lugar: </strong>" .$lugar2; 
-    echo "<br/></br>";
-    echo "<strong>Atrativos: </strong>" .$descricao2;
-    echo "<br/></br>";
-?>
-    <br><img src="Postagens/<?php echo ""."/".$foto2;?>"class="imagem" align="left"></br> 
-    <!-- Finalizando arquivo da postagem inferior -->
-
+    <p><h1 class="texto"><?php echo @$cidade;?> <!-- Titulo -->
+    <P><h1 class="texto"><?php echo @$descricao1;?> <!-- Informação -->
+    <p><img src="postagens/<?php echo ""."/".@$foto1;?>"class="imagem"> <!-- 1ª imagem -->
+    <p><h1 class="texto"><?php echo @$lugar2;?> <!-- Titulo -->
+    <p><h1 class="texto"><?php echo @$descricao2;?> <!-- Informação -->
+    <p><img src="postagens/<?php echo ""."/".@$foto2;?>"class="imagem"> <!-- 2ª imagem -->
 
     <!-- Botões de navegação -->
-    <p><input name="entrar" type="button" id="button4" onclick=location.href='#' value="#" class="bt"/>
-    <p><input name="entrar" type="button" id="button4" onclick=location.href='#' value="#" class="bt"/>
-    <!-- Link para retornar para página inicial -->
-    <p><a href="Index.php" class="link">Voltar para página inicial</a></p>
+    <p><input name="entrar" type="button" id="button4" onclick=location.href='#' value="Comprar viagem" class="bt"/>
+    <p><input name="entrar" type="button" id="button4" onclick=location.href='Index.php' value="Voltar para página inicial" class="bt"/>
 
     <style type="text/css">
-    .texto{font-size: 30px; color: white; text-align: justify;}
-    .imagem{width: 50%;}
+    .texto{font-size: 20px; font-family: Arial; color: white; text-align: justify; margin-top: 50px; margin-left: 120px; margin-right: 130px;} /* Estilo do texto */
+    .imagem{width: 100%; margin-left: auto; margin-right: auto;} /* Estilo da imagem */
+    .bt{width: 230px; height: 30px; margin-left: 0px; font-size: 20px; font-family: Arial;}
+    .bt:hover{background-color: #ffff00;}
     </style>
 
 </div>
