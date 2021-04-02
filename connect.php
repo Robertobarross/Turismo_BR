@@ -5,7 +5,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "Turismo-BR";
+$db = "Turismo-br";
 
 // link da conexão //
 $link = mysqli_connect($host, $user, $pass, $db);
