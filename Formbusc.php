@@ -11,8 +11,9 @@
 
 
 <div id="search" align="center"><!-- Inicio da div search -->
-    <form name="busc" method="POST" action="busc.php"><!-- Inicio do formulário busc -->
-    <input type="search" name="buscar" class="busc" placeholder="Pesquisar lugares" ><img src="Imagens/search.png" class="imglupa"><!-- Barra de pesquisa e imagem da lupa -->
+    <form name="searchform" method="POST" action="busc.php"><!-- Inicio do formulário busc -->
+    <input type="search" name="buscar" class="busc" placeholder="Pesquisar lugares" >
+    <img src="Imagens/search.png" class="imglupa"><!-- Barra de pesquisa e imagem da lupa -->
     </form><!-- Fim do formulário busc -->
 
     <style type="text/css">/* Inicio da estilização do formulário busc */
