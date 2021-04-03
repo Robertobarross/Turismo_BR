@@ -8,6 +8,9 @@
 </head>
 <body>
 
+
+
+
 <div id="geral"><!-- Essa div contempla toda a página, div geral -->
 
     <style type="text/css">
@@ -30,16 +33,48 @@
 </div><!-- Fim da div topo --> 
 
 
-<div id="postagens"><!-- Inicio da dvi postagens -->
 
-    <h1 class="titulo" align="center">Roteiro de viagens</h1>
+
+<div id="postagens"><!-- Inicio da div postagens -->
+
+    <h1 class="titulo" align="center">Roteiro de viagens</h1><!-- Titulo da pag postagens --> 
+
+    <?php
+    include "Postar.php"; // Postagens lado esquerdo //
+    include "PostarII.php"; // Postagens lado direito //
+    ?>
 
     <style type="text/css">
-    #postagens{width: 70%; height: 500px; display: block; margin-left: auto; margin-right: auto; border: 3px solid #66ff00; border-radius: 10px; margin-top: 70px; background-color: white;}
-    .titulo{font-size: 50px; font-family: script mt; margin-top: 5px;}
+    #postagens{width: 70%; height: 2000px; display: block; margin-left: auto; margin-right: auto; border: 3px solid #66ff00; border-radius: 10px; margin-top: 70px; background-color: white;} /* Estilo da div postagens */
+    .titulo{font-size: 50px; font-family: script mt; margin-top: 5px; color: #009900;} /* Estilo do titulo */
     </style>
 
 </div><!-- Fim da div postagens -->
+
+
+
+
+<div id="rodapé" align="center">
+
+         <!-- Imagens redes sociais -->                  <!-- Links redes sociais -->
+    <img src="imagens/facebook.png" class="logo"><a href="https://pt-br.facebook.com/" class="link"> Turismo Brasil</a>
+    <img src="imagens/instagram.png" class="logo"><a href="https://www.instagram.com/" class="link"> @TurismoBr</a>
+    <img src="imagens/linkedin.png" class="logo"><a href="https://br.linkedin.com/" class="link"> Turismo_br</a>
+    <img src="imagens/whatsapp.png" class="logo"><a href="https://web.whatsapp.com/" class="link"> (11)35154-0020</a>
+
+    <!-- Direitos reservados -->
+    <br><h1 class="direitos">&COPY; Copyright - Turismo Brasil - 2021 - Todos os direitos reservados.</h1>
+      
+    <style type="text/css">
+    #rodapé{width: 70%; height: 200px; border: 3px solid #ffff00; border-radius: 10px; margin-top: 20px; margin-left: auto; margin-right: auto; background-color: #0033ff;} /* Estilo da div rodapé */
+    .logo{width: 50px; margin-top: 20px;} /* Estilo das imagens redes sociais  */
+    .logo:hover{background-color: white;} /* Mudar cor quando passar o mouse */
+    .direitos{font-size: 13px; font-family: Arial; margin-top: 80px;} /* Estilo do texto direitos reservados */
+    </style>
+
+</div>
+
+
 
 </div><!-- Fim da div geral -->
     
