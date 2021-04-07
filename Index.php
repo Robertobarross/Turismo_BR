@@ -22,7 +22,8 @@
     <img src="Imagens/img.png" class="topo"><!-- Imagem do topo -->
 
     <?php
-    include "Formbusc.php";
+    include "Formbusc.php"; // Barra de pesquisa //
+    include "Menu.php"; // Arquivo Menu //
     ?>
     
     <style type="text/css"> 
@@ -54,25 +55,26 @@
 
 
 
-<div id="rodapé" align="center">
+<div id="rodapé" align="center"><!-- Inicio da div rodapé --> 
 
-         <!-- Imagens redes sociais -->                  <!-- Links redes sociais -->
-    <img src="imagens/facebook.png" class="logo"><a href="https://pt-br.facebook.com/" class="link"> Turismo Brasil</a>
-    <img src="imagens/instagram.png" class="logo"><a href="https://www.instagram.com/" class="link"> @TurismoBr</a>
-    <img src="imagens/linkedin.png" class="logo"><a href="https://br.linkedin.com/" class="link"> Turismo_br</a>
-    <img src="imagens/whatsapp.png" class="logo"><a href="https://web.whatsapp.com/" class="link"> (11)35154-0020</a>
+           <!-- Limks redes sociais -->          <!-- Imagens redes sociais -->
+    <a href="https://pt-br.facebook.com/"><img src="imagens/facebook.png" class="logo"></a>
+    <a href="https://www.instagram.com/"><img src="imagens/instagram.png" class="logo"></a>
+    <a href="https://br.linkedin.com/"><img src="imagens/linkedin.png" class="logo"></a>
+    <a href="https://web.whatsapp.com/"><img src="imagens/whatsapp.png" class="logo"></a>
+
 
     <!-- Direitos reservados -->
     <br><h1 class="direitos">&COPY; Copyright - Turismo Brasil - 2021 - Todos os direitos reservados.</h1>
       
     <style type="text/css">
     #rodapé{width: 70%; height: 200px; border: 3px solid #ffff00; border-radius: 10px; margin-top: 20px; margin-left: auto; margin-right: auto; background-color: #0033ff;} /* Estilo da div rodapé */
-    .logo{width: 50px; margin-top: 20px;} /* Estilo das imagens redes sociais  */
+    .logo{width: 50px; margin: 5px; margin-top: 20px;} /* Estilo das imagens redes sociais  */
     .logo:hover{background-color: white;} /* Mudar cor quando passar o mouse */
     .direitos{font-size: 13px; font-family: Arial; margin-top: 80px;} /* Estilo do texto direitos reservados */
     </style>
 
-</div>
+</div><!-- Fim da div rodapé --> 
 
 
 
