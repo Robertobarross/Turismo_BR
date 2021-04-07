@@ -22,7 +22,7 @@ $sql = mysqli_query($link, "SELECT * FROM postagens ORDER BY cidade DESC");// fa
 	$imagem = $line['imagem'];
 	$texto = $line['texto']; // Fim das variáveis //
 ?>
-    <h1 class="cidade"><?php echo $cidade;?></h1><!-- Mostrar cidade -->
+    <br><h1 class="cidade"><?php echo $cidade;?></h1><!-- Mostrar cidade -->
     <h1 class="lugar"><?php echo $lugar;?><!-- Mostrar lugar -->
     <img src="postagens/<?php echo ""."/".$imagem;?>"class="imagem"><!-- Mostrar imagem -->
     <p class="texto"><?php echo $texto;?></p><!-- Mostrar texto -->
@@ -33,7 +33,7 @@ $sql = mysqli_query($link, "SELECT * FROM postagens ORDER BY cidade DESC");// fa
     .cidade{font-size: 25px; font-family: Arial; color: #666666; margin: 20px;}/* Estilo do nome cidade */
     .lugar{font-size: 20px; font-family: Arial; color: #666666; margin: 20px;}/* Estilo do nome lugar */
     .imagem{width: 100%; margin-top: 8px; height: 0%; padding: 0px;}/* Estilo da imagem */
-    .texto{font-size: 12px; font-family: Arial; color: #666666; margin-top: 8px; text-align: justify;}/* Texto */
+    .texto{font-size: 12px; font-family: Arial; color: #666666; margin-top: 30px; text-align: justify;}/* Texto */
     .link{font-size: 12px; font-family: Arial; text-decoration: none; color: black;}/* Link */
     </style>
 
