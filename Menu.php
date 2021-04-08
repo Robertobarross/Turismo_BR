@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    
     <br><a href="#" class="menu-open">MENU</a></br><!-- Botão Do menu -->
 
     <!-- Aqui começam os códigos que definem o Menu -->
@@ -16,13 +15,14 @@
 
     <a href="#" class="menu-close">&times;</a>
     <ul>
-    <br><li><a href="Formlogin.php" target="_blank" class="link">Login</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Pacotes</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Roteiros</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Viaje com Turismo BR</a></li></br>
-    <br><li><a href="#" target="_blank" class="link">Postar</a></li></br>
-    <br><li><a href="Post2.php" target="_blank" class="link">Postagem</a></li></br>
+    <br><li><a href="Formlogin.php" target="_blank" class="link" onclick="alert('')">Login</a></li></br>
+    <br><li><a href="#" target="_blank" class="link" onclick="alert('')">Pacotes</a></li></br>
+    <br><li><a href="#" target="_blank" class="link" onclick="alert('')">Roteiros</a></li></br>
+    <br><li><a href="#" target="_blank" class="link" onclick="alert('')">Viaje com Turismo BR</a></li></br>
+    <br><li><a href="Post1.php" target="_blank" class="link" onclick="alert('Postar 1?')">Postar</a></li></br>
+    <br><li><a href="Post2.php" target="_blank" class="link" onclick="alert('Postar 2?')">Postagem</a></li></br>
     </ul>
+
 </div><!-- Fim da div links menu -->
 
     <!-- Arquivo JS já faz parte da deslizagem da barra de menu -->
